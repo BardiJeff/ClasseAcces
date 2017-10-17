@@ -7,7 +7,7 @@
     <ProjectGuid>{1878E3EB-DEF5-4504-9709-433534BC0D55}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClasseAccesEMP</RootNamespace>
+    <RootNamespace>ClasseAcces</RootNamespace>
     <AssemblyName>ClasseAcces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesEMP.cs" />
+    <Compile Include="AccesEmpList.cs" />
+    <Compile Include="Employes.cs" />
     <Compile Include="TesteurConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

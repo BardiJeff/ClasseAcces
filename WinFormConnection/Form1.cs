@@ -8,42 +8,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using ClasseAcces;
 
 namespace WinFormConnection
 {
     public partial class Form1 : Form
     {
-        private static string ConnnectStr = "Data Source=176.31.248.137; Initial Catalog=user10; Persist Security Info=True; User ID=user10; Password=026user10";
+        AccesEMP Acces;
+        AccesEmpList AccesListe;
 
         public Form1()
         {
             InitializeComponent();
-        }
+            Acces = new AccesEMP();
+            AccesListe = new AccesEmpList();
+
+        } 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //     SQLCONNECTION
+            int idEmploye = Convert.ToInt32(textBoxID.Text);            
 
-            SqlConnection connect = new SqlConnection();
-            connect.ConnectionString = ConnnectStr;
-            connect.Open();
+            textBox3.Text = Acces.ConnectBaseNom(idEmploye);            
+        }
 
-            //     SQLCOMMAND
+        private void JobEmployé_Click(object sender, EventArgs e)
+        {
+            int idEmploye = Convert.ToInt32(textBoxID.Text);
 
-            String requete = " SELECT ENAME FROM EMP WHERE EMPNO = 7839";
+            textBox4.Text = Acces.ConnectBaseDept(idEmploye);
+        }
 
-            SqlCommand command = new SqlCommand(requete, connect);
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<Employes> Maliste = AccesListe.FindAllEmployes();
 
-            SqlDataReader reader = command.ExecuteReader();
-
-
-            //reader.NextResult();
-            reader.Read();
-            textBoxNOM.Text = string.Format("Le Nom est : {0} ", reader.GetValue(0));
-
+            dataGridView1.DataSource = Maliste;
             
-            connect.Close();
-
         }
     }
 }

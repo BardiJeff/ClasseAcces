@@ -6,36 +6,67 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ClasseAccesEMP
+namespace ClasseAcces
 {
     public class AccesEMP
     {
 
         private static string ConnnectStr = "Data Source=176.31.248.137; Initial Catalog=user10; Persist Security Info=True; User ID=user10; Password=026user10";
 
-        public void ConnectBase()
+
+        public string ConnectBaseNom(int IdEmploye)
         {
             //     SQLCONNECTION
 
-            SqlConnection connect = new SqlConnection();
+            SqlConnection connect = new SqlConnection(); // Instanciation de la classe "SqlConnection"
             connect.ConnectionString = ConnnectStr;
             connect.Open();
 
             //     SQLCOMMAND
 
-            String requete = " SELECT * FROM EMP WHERE EMPNO = 7839";
+            string requete = " SELECT * FROM EMP WHERE EMPNO =" + IdEmploye;
 
-            SqlCommand command = new SqlCommand(requete, connect);
+            SqlCommand command = new SqlCommand(requete, connect); // Instanciation de la classe "SqlCommand"
 
-            SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader(); // ExecuteReader est un curseur placé par défaut au dessus de la 1ère ligne 
 
-            while (reader.Read())
-            {
+            reader.Read(); // read permet le " Move " du curseur 
 
-            Console.WriteLine(String.Format("{0}, {1}, {2}", reader[0], reader[1], reader[2]));
-
-            }
-            connect.Close();
+            return reader.GetString(1);  
         }
+
+        public string ConnectBaseDept (int IdEmploye)
+        {
+            //     SQLCONNECTION
+
+            SqlConnection connect = new SqlConnection(); // Instanciation de la classe "SqlConnection"
+            connect.ConnectionString = ConnnectStr;
+            connect.Open();
+
+            //     SQLCOMMAND
+
+            string requete = " SELECT JOB FROM EMP WHERE EMPNO =" + IdEmploye;
+
+            SqlCommand command = new SqlCommand(requete, connect); // Instanciation de la classe "SqlCommand"
+
+            SqlDataReader reader = command.ExecuteReader(); // ExecuteReader est un curseur placé par défaut au dessus de la 1ère ligne 
+
+            reader.Read(); // read permet le " Move " du curseur 
+
+            return reader.GetString(0);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

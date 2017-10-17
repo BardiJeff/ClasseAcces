@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace ClasseAccesEMP
+namespace ClasseAcces
 {
     public class TesteurConnect
     {
@@ -14,8 +14,8 @@ namespace ClasseAccesEMP
 
             try
             {
-                AccesEMP test = new  AccesEMP();
-                test.ConnectBase();
+                //AccesEMP test = new  AccesEMP();
+                //test.ConnectBase();
             }
             catch (SqlException e)
             {
