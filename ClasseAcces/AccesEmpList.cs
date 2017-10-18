@@ -34,17 +34,25 @@ namespace ClasseAcces
             foreach (DataRow champ in Table.Rows)
             {
                 int manager = 0;
+                decimal comm = 0;
                 
                 if(! DBNull.Value.Equals(champ[3]))
                 {
                     manager = Convert.ToInt32(champ[3]);
                 }
+                if (!DBNull.Value.Equals(champ[6]))
+                {
+                    comm = Convert.ToDecimal(champ[6]);
+                }
+
 
                 ListeEmp.Add
                     (new Employes(Convert.ToInt32(champ[0]),
                                   champ[1].ToString(),
-                                  manager,
                                   champ[2].ToString(),
+                                  manager,                                  
+                                  Convert.ToDecimal(champ[5]),
+                                  comm,
                                   Convert.ToInt32(champ[7])
                                  )
                     );

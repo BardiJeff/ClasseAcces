@@ -10,24 +10,27 @@ namespace ClasseAcces
     {
         // PROPERTY
 
-        public int Empno {get; set; }
-        public string Ename { get; set; }
-        public string Job { get; set; }
-        public int Manager{ get; set; }
-        public decimal Sal { get; set; }
-        public int Deptno { get; set; }
+        public int EMPLOYE {get; set; }
+        public string NOM { get; set; }
+        public string FONCTION { get; set; }
+        public int MANAGER{ get; set; }
+        public decimal SALAIRE { get; set; }
+        public decimal COMM { get; set; }
+        public int DEPARTEMENT { get; set; }
 
         // CONSTRUCTEURS
 
         public Employes() { }
 
-        public Employes(int empno, string ename, int manager, string job, int deptno)
+        public Employes(int empno, string ename, string job, int manager, decimal sal, decimal comm, int deptno)
         {
-            this.Empno = empno;
-            this.Ename = ename;
-            this.Manager = manager;
-            this.Job = job;
-            this.Deptno = deptno;
+            this.EMPLOYE = empno;
+            this.NOM = ename;
+            this.FONCTION = job;
+            this.MANAGER = manager;
+            this.SALAIRE = sal; 
+            this.COMM = comm;           
+            this.DEPARTEMENT = deptno;
         }
     }
 }

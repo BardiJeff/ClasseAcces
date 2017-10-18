@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseAcces", "ClasseAcces\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormConnection", "WinFormConnection\WinFormConnection.csproj", "{BA508582-2777-4BF2-9989-C1727144305A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsProjet", "ExceptionsProjet\ExceptionsProjet.csproj", "{0251037B-C361-4832-A933-FE3EA8907772}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BA508582-2777-4BF2-9989-C1727144305A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA508582-2777-4BF2-9989-C1727144305A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA508582-2777-4BF2-9989-C1727144305A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0251037B-C361-4832-A933-FE3EA8907772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0251037B-C361-4832-A933-FE3EA8907772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0251037B-C361-4832-A933-FE3EA8907772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0251037B-C361-4832-A933-FE3EA8907772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
