@@ -40,19 +40,17 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.textBoxNomDept = new System.Windows.Forms.TextBox();
-            this.NomDept = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.textBoxLocDept = new System.Windows.Forms.TextBox();
-            this.LocDept = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.button2 = new System.Windows.Forms.Button();
             this.textBoxNumDept = new System.Windows.Forms.TextBox();
-            this.NumDep = new System.Windows.Forms.Label();
             this.LabelMessage = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,7 +64,6 @@
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +81,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.529412F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.47059F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.button4, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
@@ -97,27 +94,29 @@
             this.tableLayoutPanel1.Controls.Add(this.splitContainer1, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.splitContainer2, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.splitContainer3, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.LabelMessage, 1, 8);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowCount = 12;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.88344F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.11656F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 184F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1271, 599);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1271, 605);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(413, 70);
+            this.textBox3.Location = new System.Drawing.Point(409, 59);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(308, 20);
             this.textBox3.TabIndex = 1;
@@ -125,7 +124,7 @@
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(413, 146);
+            this.textBox4.Location = new System.Drawing.Point(409, 103);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(308, 20);
             this.textBox4.TabIndex = 2;
@@ -133,7 +132,7 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(1122, 68);
+            this.button1.Location = new System.Drawing.Point(1118, 58);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 1;
@@ -144,7 +143,7 @@
             // textBoxID
             // 
             this.textBoxID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxID.Location = new System.Drawing.Point(413, 10);
+            this.textBoxID.Location = new System.Drawing.Point(409, 16);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(308, 20);
             this.textBoxID.TabIndex = 0;
@@ -152,7 +151,7 @@
             // JobEmployé
             // 
             this.JobEmployé.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.JobEmployé.Location = new System.Drawing.Point(1134, 144);
+            this.JobEmployé.Location = new System.Drawing.Point(1130, 101);
             this.JobEmployé.Name = "JobEmployé";
             this.JobEmployé.Size = new System.Drawing.Size(99, 23);
             this.JobEmployé.TabIndex = 5;
@@ -163,7 +162,7 @@
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Location = new System.Drawing.Point(1115, 268);
+            this.button3.Location = new System.Drawing.Point(1112, 201);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 23);
             this.button3.TabIndex = 6;
@@ -175,7 +174,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1137, 13);
+            this.label1.Location = new System.Drawing.Point(1133, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 7;
@@ -185,15 +184,15 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 191);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 137);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 178);
+            this.dataGridView1.Size = new System.Drawing.Size(1045, 152);
             this.dataGridView1.TabIndex = 8;
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(41, 375);
+            this.splitContainer1.Location = new System.Drawing.Point(41, 295);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -203,31 +202,22 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.NomDept);
-            this.splitContainer1.Size = new System.Drawing.Size(1052, 30);
-            this.splitContainer1.SplitterDistance = 350;
+            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Size = new System.Drawing.Size(1045, 48);
+            this.splitContainer1.SplitterDistance = 348;
             this.splitContainer1.TabIndex = 13;
             // 
             // textBoxNomDept
             // 
-            this.textBoxNomDept.Location = new System.Drawing.Point(0, 7);
+            this.textBoxNomDept.Location = new System.Drawing.Point(3, 16);
             this.textBoxNomDept.Name = "textBoxNomDept";
             this.textBoxNomDept.Size = new System.Drawing.Size(100, 20);
             this.textBoxNomDept.TabIndex = 10;
             // 
-            // NomDept
-            // 
-            this.NomDept.AutoSize = true;
-            this.NomDept.Location = new System.Drawing.Point(14, 10);
-            this.NomDept.Name = "NomDept";
-            this.NomDept.Size = new System.Drawing.Size(52, 13);
-            this.NomDept.TabIndex = 0;
-            this.NomDept.Text = "NomDept";
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(41, 411);
+            this.splitContainer2.Location = new System.Drawing.Point(41, 349);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -237,78 +227,55 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.LocDept);
-            this.splitContainer2.Size = new System.Drawing.Size(1052, 31);
-            this.splitContainer2.SplitterDistance = 350;
+            this.splitContainer2.Panel2.Controls.Add(this.button5);
+            this.splitContainer2.Size = new System.Drawing.Size(1045, 39);
+            this.splitContainer2.SplitterDistance = 348;
             this.splitContainer2.TabIndex = 14;
             // 
             // textBoxLocDept
             // 
-            this.textBoxLocDept.Location = new System.Drawing.Point(0, 3);
+            this.textBoxLocDept.Location = new System.Drawing.Point(3, 10);
             this.textBoxLocDept.Name = "textBoxLocDept";
             this.textBoxLocDept.Size = new System.Drawing.Size(100, 20);
             this.textBoxLocDept.TabIndex = 11;
             // 
-            // LocDept
-            // 
-            this.LocDept.AutoSize = true;
-            this.LocDept.Location = new System.Drawing.Point(14, 10);
-            this.LocDept.Name = "LocDept";
-            this.LocDept.Size = new System.Drawing.Size(48, 13);
-            this.LocDept.TabIndex = 0;
-            this.LocDept.Text = "LocDept";
-            // 
             // splitContainer3
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(41, 448);
+            this.splitContainer3.Location = new System.Drawing.Point(41, 394);
             this.splitContainer3.Name = "splitContainer3";
             // 
             // splitContainer3.Panel1
             // 
             this.splitContainer3.Panel1.Controls.Add(this.label5);
             this.splitContainer3.Panel1.Controls.Add(this.textBoxNumDept);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.Controls.Add(this.NumDep);
-            this.splitContainer3.Size = new System.Drawing.Size(1052, 43);
-            this.splitContainer3.SplitterDistance = 350;
+            this.splitContainer3.Size = new System.Drawing.Size(1045, 43);
+            this.splitContainer3.SplitterDistance = 348;
             this.splitContainer3.TabIndex = 15;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Location = new System.Drawing.Point(1146, 378);
+            this.button2.Location = new System.Drawing.Point(84, 13);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 16;
-            this.button2.Text = "button2";
+            this.button2.Text = "Insertion";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBoxNumDept
             // 
-            this.textBoxNumDept.Location = new System.Drawing.Point(0, 15);
+            this.textBoxNumDept.Location = new System.Drawing.Point(3, 12);
             this.textBoxNumDept.Name = "textBoxNumDept";
             this.textBoxNumDept.Size = new System.Drawing.Size(100, 20);
             this.textBoxNumDept.TabIndex = 0;
-            // 
-            // NumDep
-            // 
-            this.NumDep.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NumDep.AutoSize = true;
-            this.NumDep.Location = new System.Drawing.Point(14, 21);
-            this.NumDep.Name = "NumDep";
-            this.NumDep.Size = new System.Drawing.Size(52, 13);
-            this.NumDep.TabIndex = 0;
-            this.NumDep.Text = "NumDept";
             // 
             // LabelMessage
             // 
             this.LabelMessage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LabelMessage.AutoSize = true;
-            this.LabelMessage.Location = new System.Drawing.Point(567, 540);
+            this.LabelMessage.Location = new System.Drawing.Point(563, 484);
             this.LabelMessage.Name = "LabelMessage";
             this.LabelMessage.Size = new System.Drawing.Size(0, 13);
             this.LabelMessage.TabIndex = 17;
@@ -343,13 +310,24 @@
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.Location = new System.Drawing.Point(1146, 535);
+            this.button4.Location = new System.Drawing.Point(1142, 479);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 1;
             this.button4.Text = "Quitter";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Location = new System.Drawing.Point(84, 13);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Modification";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -366,19 +344,15 @@
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
-            this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel1.PerformLayout();
-            this.splitContainer3.Panel2.ResumeLayout(false);
-            this.splitContainer3.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -399,19 +373,17 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TextBox textBoxNomDept;
-        private System.Windows.Forms.Label NomDept;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.TextBox textBoxLocDept;
-        private System.Windows.Forms.Label LocDept;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBoxNumDept;
-        private System.Windows.Forms.Label NumDep;
         private System.Windows.Forms.Label LabelMessage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

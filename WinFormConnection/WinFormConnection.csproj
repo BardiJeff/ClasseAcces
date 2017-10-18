@@ -84,6 +84,10 @@
       <Project>{1878e3eb-def5-4504-9709-433534bc0d55}</Project>
       <Name>ClasseAcces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ClasseExceptions1\ClasseExceptions.csproj">
+      <Project>{df8bbc0f-975f-4252-9a0e-3f39c80730d3}</Project>
+      <Name>ClasseExceptions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
